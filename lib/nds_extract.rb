@@ -52,7 +52,8 @@ def total_gross(source)
   # Visit each key (i.e. director name), look up the value in the hash
   # returned by directors_totals, and add it to a running total. When done,
   # return the total
-  director_earning_hash = directors_totals(source)
+  
+  director_earnings_hash = directors_totals(source)
   director_names = list_of_directors(source)
   index = 0
   total = 0
@@ -62,4 +63,13 @@ def total_gross(source)
       index += 1
     end
   total
+
+  # total = 0
+  # dir_totals = directors_totals(source)
+  # dir_list = list_of_directors(source)
+  # index = 0
+  # while  index < dir.length do
+  #   total += dir_totals[dir[index]]
+  #   index += 1
+  # end
 end
