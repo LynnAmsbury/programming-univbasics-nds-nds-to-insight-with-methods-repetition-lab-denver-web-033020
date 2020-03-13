@@ -54,8 +54,8 @@ def total_gross(source)
 
   director_earnings_hash = directors_totals(source) # The result of directors_totals (saved in its hash)
   director_names_array = list_of_directors(source) # The result of list_of_directors (saved in its array)
-  index = 0 # Counter for the current position in the director_names_array
-  total = 0 # Counter for total gross earnings
+  index = 0 # Index for the current position in the director_names_array
+  total = 0 # Index for total gross earnings
     while index < director_names_array.length do # While the current index is less than the length of the director_names hash do...
       dir_name = director_names_array[index] # Assign the current (index) director's name to dir_name
       total += director_earnings_hash[dir_name] # Increment the total director_earnings_hash with the earnings for each director
