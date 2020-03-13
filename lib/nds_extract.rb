@@ -33,10 +33,9 @@ def list_of_directors(source)
   # Push each value into a new array
   # Return the new array
   directors_list = [] # New array
-  director_index = 0 # Counter for the index of the director's information in d_d
+  director_index = 0 # Index of the director's information in d_d
   while director_index < source.length do # While the current index of director's info is less than the length of the source nds do...
-    directors_list.push(source[director_index][:name]) # Push the value of the :name key in the director_index in the source nds WAIT I'M
-                                                      # A BIT CONFUSED HERE BY director_index - isn't it a counter?
+    directors_list.push(source[director_index][:name]) # Push the value of the :name key in the director_index in the source nds
     director_index += 1 # Increment the counter
   end
   directors_list # Return the new array
@@ -63,13 +62,4 @@ def total_gross(source)
       index += 1 # Increment the index counter and move on to the next director
     end
   total
-
-  # total = 0
-  # dir_totals = directors_totals(source)
-  # dir_list = list_of_directors(source)
-  # index = 0
-  # while  index < dir.length do
-  #   total += dir_totals[dir[index]]
-  #   index += 1
-  # end
 end
