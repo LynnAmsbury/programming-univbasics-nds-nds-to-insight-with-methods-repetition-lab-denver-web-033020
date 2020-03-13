@@ -54,7 +54,7 @@ def total_gross(source)
   # return the total
 
   director_earnings_hash = directors_totals(source) # The result of directors_totals (saved in its hash)
-  director_names = list_of_directors(source)
+  director_names = list_of_directors(source) # The result of list_of_directors (saved in its array)
   index = 0
   total = 0
     while index < director_names.length do
