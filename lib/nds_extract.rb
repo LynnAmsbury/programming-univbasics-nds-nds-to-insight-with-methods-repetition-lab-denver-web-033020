@@ -57,8 +57,8 @@ def total_gross(source)
   director_names_array = list_of_directors(source) # The result of list_of_directors (saved in its array)
   index = 0 # Counter for
   total = 0 # Counter for
-    while index < director_names.length do # While the current index is less than the length of the director_names hash do...
-      dir_name = director_names[index] # Assign the current (index) director name in dir_name
+    while index < director_names_array.length do # While the current index is less than the length of the director_names hash do...
+      dir_name = director_names_array[index] # Assign the current (index) director name in dir_name
       total += director_earning_hash[dir_name]
       index += 1
     end
