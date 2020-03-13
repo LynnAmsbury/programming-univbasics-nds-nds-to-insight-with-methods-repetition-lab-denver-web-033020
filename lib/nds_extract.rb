@@ -61,5 +61,5 @@ def total_gross(source)
       total += director_earnings_hash[dir_name] # Increment the total director_earnings_hash with the earnings for each director
       index += 1 # Increment the index counter and move on to the next director
     end
-  total
+  total # Return the total
 end
