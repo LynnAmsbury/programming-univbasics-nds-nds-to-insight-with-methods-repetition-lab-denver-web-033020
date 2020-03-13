@@ -1,5 +1,6 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require_relative './directors_database'
+require 'pry'
 
 def directors_totals(source)
   result = {}
@@ -26,6 +27,19 @@ end
 
 def list_of_directors(source)
   # Write this implementation
+  # Access the source array
+  # Loop over each element in source
+  # Access the value of the :name key in the Hash
+  # Push each value into a new array
+  # Return the new array
+  directors_list = [] # New array
+  director_index = 0 # Counter for the index of the director's information in d_d
+  while director_index < source.length do # While the current index of director's info is less than the length of the source nds do...
+    directors_list.push(source[director_index][:name]) # Push the value of the :name key in the director_index in the source nds WAIT I'M
+                                                      # A BIT CONFUSED HERE BY director_index - isn't it a counter?
+    director_index += 1 # Increment the counter
+  end
+  directors_list # Return the new array
 end
 
 def total_gross(source)
@@ -39,5 +53,3 @@ def total_gross(source)
   # returned by directors_totals, and add it to a running total. When done,
   # return the total
 end
-
-
